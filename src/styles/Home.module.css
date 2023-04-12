@@ -40,19 +40,33 @@
 }
 
 .grid {
-  display: grid;
+  max-width: 800px;
+  margin-top: 3rem;
   grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+
+ 
 }
 
+
 .card {
+  background: lightgreen;
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+
 }
+
 
 .card span {
   display: inline-block;
@@ -110,7 +124,9 @@
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
+    background-color: aqua;
+
+    /* background: rgba(var(--card-rgb), 0.1); */
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
