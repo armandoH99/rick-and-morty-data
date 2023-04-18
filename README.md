@@ -11,8 +11,7 @@ yarn dev
 # or
 pnpm dev
 ```
-DEMO [rick-and-morty](rick-and-morty-data-rust.vercel.app
-) 
+DEMO [rick-and-morty](https://rick-and-morty-data-rust.vercel.app/)
 
 
 
